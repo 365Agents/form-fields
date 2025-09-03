@@ -1,4 +1,4 @@
-import { Sparkles, Brain, FileText } from 'lucide-react'
+import { Sparkles, Brain } from 'lucide-react'
 
 export default function LoadingSpinner() {
   return (

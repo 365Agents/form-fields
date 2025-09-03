@@ -1,6 +1,6 @@
 import { useCallback } from 'react'
 import { useDropzone } from 'react-dropzone'
-import { Upload, Image as ImageIcon, AlertCircle } from 'lucide-react'
+import { Upload, Image as ImageIcon, CircleAlert } from 'lucide-react'
 
 interface ImageUploaderProps {
   onImageUpload: (file: File) => void
@@ -78,7 +78,7 @@ export default function ImageUploader({ onImageUpload }: ImageUploaderProps) {
       {fileRejections.length > 0 && (
         <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg">
           <div className="flex items-center text-red-700">
-            <AlertCircle className="w-5 h-5 mr-2" />
+            <CircleAlert className="w-5 h-5 mr-2" />
             <span className="font-semibold">Upload Error</span>
           </div>
           <ul className="mt-2 text-red-600 text-sm">
